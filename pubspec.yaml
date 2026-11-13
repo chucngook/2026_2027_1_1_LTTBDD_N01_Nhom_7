@@ -1,0 +1,54 @@
+name: playtime
+description: "Playtime (PT) - mini game cho hai người: chơi với máy, chung máy hoặc online. Song ngữ Việt - Anh."
+publish_to: 'none'
+
+version: 2.1.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  audioplayers: ^6.1.0
+  shared_preferences: ^2.3.2
+  sqflite: ^2.4.1
+  path: ^1.9.0
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^6.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  config:
+    enable-swift-package-manager: false
+
+  assets:
+    - assets/images/
+    - assets/images/games/
+    - assets/images/cards/
+    - assets/images/items/
+    - assets/images/chess/
+    - assets/images/ui/
+    - assets/sounds/
+    - assets/music/
+
+  # Font tròn (tùy chọn). Tải "Baloo 2" tại fonts.google.com/specimen/Baloo+2,
+  # chép các file vào assets/fonts/ rồi bỏ dấu # ở khối dưới.
+  # fonts:
+  #   - family: Baloo2
+  #     fonts:
+  #       - asset: assets/fonts/Baloo2-Regular.ttf
+  #       - asset: assets/fonts/Baloo2-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Baloo2-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Baloo2-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/Baloo2-ExtraBold.ttf
+  #         weight: 800
